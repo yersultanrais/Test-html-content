@@ -1,0 +1,384 @@
+/*Спецификации*/
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('../fonts/GillSansMT.eot');
+    src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSansMT.woff2') format('woff2'),
+        url('../fonts/GillSansMT.woff') format('woff'),
+        url('../fonts/GillSansMT.ttf') format('truetype'),
+        url('../fonts/GillSansMT.svg#GillSansMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('../fonts/GillSansMT-Bold.eot');
+    src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSansMT-Bold.woff2') format('woff2'),
+        url('../fonts/GillSansMT-Bold.woff') format('woff'),
+        url('../fonts/GillSansMT-Bold.ttf') format('truetype'),
+        url('../fonts/GillSansMT-Bold.svg#GillSansMT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-family: 'Gill Sans MT';
+	font-size: 16px;
+	font-weight: normal;
+	color: #8c8f94;
+}
+	
+button,
+button:hover
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #26272d;
+	line-height: 1.16em;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #26272d;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.btn {
+	background-color: #267df4;
+	border: #267df4;
+	width: 130px;
+	padding: 10px 20px;
+	display: block;
+	border-radius: 21px;
+	color: #fff;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #2478eb;
+	border: #2478eb;
+	color: #fff;
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+
+.btn:active {
+	background: #1c00bf;
+	box-shadow: none
+}
+
+
+/*Первый экран*/
+.header {
+	background: url('../img/bg.jpg') no-repeat center top/cover;
+	padding-top: 39px;
+}
+
+.menu__item:not(:last-of-type){
+	margin-right: 30px;
+}
+
+.menu__link:active {
+	color: #9aa0ad;
+}
+
+.menu__link-row {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: #26292d;
+	margin-bottom: 3px;
+}
+
+.btn__img {
+	background: url('../img/apple.png') no-repeat center center;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.offer {
+	width: 811px;
+	margin-top: 120px;
+}
+
+.offer__tittle {
+	font-size: 62px;
+	margin-bottom: 30px;
+}
+
+.offer__text {
+	font-size: 20px;
+	margin-bottom: 60px;
+}
+
+.btn-soul {
+	display: block;
+	color: #26272d;
+	width: 195px;
+	border: 1px solid #26272d;
+	border-radius: 25px;
+	padding: 10px 45px;
+}
+
+.btn-soul:hover {
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+
+.btn-soul:active {
+	box-shadow: none
+}
+
+.offer__btn-img {
+	background: url('../img/play_icon.png') no-repeat center center;
+	width: 15px;
+	height: 15px;
+}
+
+.offer__img {
+	margin-top: 55px;
+	transition: all 0.5s ease;
+}
+
+.offer__img:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*Второй экран*/
+.features {
+	padding: 122px 0 35px;
+}
+
+.time__lock {
+	background: url('../img/lock_icon.png') no-repeat;
+	width: 42px;
+	height: 51px;
+}
+
+.time__title {
+	font-size: 26px;
+	margin: 41px 0 34px;
+}
+
+.time__text {
+	font-size: 18px;
+	width: 524px;
+}
+
+.time__clock {
+	background: url('../img/clock_Icon.png') no-repeat;
+	width: 42px;
+	height: 51px;
+}
+
+
+/*Третий экран*/
+.iphone {
+	padding: 78px 0 148px;
+}
+
+.iphone__img {
+	margin-left: -125px;
+	overflow-x: hidden;
+	transition: all 0.5s ease;
+	max-width: 774px;
+	width: 104%;
+}
+
+.iphone__img:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.iphone__tittle {
+	font-size: 42px;
+	width: 262px;
+	margin-bottom: 64px;
+}
+
+.iphone__text {
+	font-size: 20px;
+	width: 490px;
+}
+
+.iphone__btn {
+	margin-top: 70px;
+	width: 380px;
+}
+
+.iphone__btn-try {
+	padding: 10px 20px;
+	width: 210px;
+}
+
+.iphone__btn-arrow {
+	background: url('../img/arrow.png') no-repeat center center;
+	width: 13px;
+	height: 12px;
+}
+
+.iphone__btn-learn {
+	padding: 10px 18px;
+	width: 145px;
+}
+
+/*Четвертый экран*/
+.map {
+	padding: 18px 0 222px;
+}
+
+.map__tittle {
+	font-size: 42px;
+	margin-bottom: 57px;
+	width: 321px;
+}
+
+.map__text {
+	font-size: 20px;
+	width: 473px;
+	margin-bottom: 60px;
+}
+
+.map__partners {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+}
+
+.map__link-dropbox {
+	background: url('../img/dropbox.png') no-repeat center top;
+	width: 125px;
+	height: 35px;
+	margin-right: 35px;
+}
+
+.map__link-evernote {
+	background: url('../img/evernote.png') no-repeat center top;
+	width: 140px;
+	height: 35px;
+}
+
+/*Пятый экран*/
+.footer {
+	padding: 104px 0 268px;
+}
+
+.full__tittle {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.full__text {
+	font-size: 14px;
+	width: 262px;
+	margin: 18px 0 27px;
+}
+
+.footer__tittle {
+	font-size: 12px;
+	margin-bottom: 9px;
+	text-transform: uppercase;
+}
+
+.footer__item {
+	margin-bottom: 10px;
+}
+.footer__link {
+	color: #8c8f94;
+}
+
+/*Responsive*/
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.time__text {
+		width: 100%;
+	}
+	.iphone__img {
+		width: 100%;
+		overflow-x: visible;
+	}
+	.iphone__text {
+		width: 100%;
+	}
+	.map__text {
+		width: 100%;
+	}
+	.map__img {
+		width: 100%;
+	}
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.logo img {
+		margin-bottom: 30px;
+	}
+	.offer {
+		width: 100%;
+	}
+	.iphone__img {
+		margin-left: 0;
+		width: 100%;
+	}
+	.iphone__img img {
+		width: 100%;
+	}
+	.iphone__img:hover {
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+	.offer__img:hover {
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+	.map__link {
+		margin-bottom: 50px;
+	}
+	.full {
+		margin-bottom: 30px;
+	}
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	
+}
+
+/* Extra small: 451px - 575px */
+@media (max-width: 575px) {
+	
+}
